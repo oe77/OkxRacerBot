@@ -63,6 +63,7 @@ run.sh
 
 ## 4.设置代理
 1.编辑 .env 文件开启代理 USE_PROXY_FROM_FILE=True
+
 2.编辑 bot/config/proxies.txt 文件添加代理服务器，例http://127.0.0.1:7890
 
 
