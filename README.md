@@ -1,57 +1,45 @@
-[![Static Badge](https://img.shields.io/badge/Telegram-Bot%20Link-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/OKX_official_bot/OKX_Racer?startapp=linkCode_116016253)
+# 🔥🔥 [OKX Racer游戏入口](https://t.me/OKX_official_bot/OKX_Racer?startapp=linkCode_110429030) 🔥🔥
 
-## Recommendation before use
+- [OKX Racer游戏说明](https://www.okx.com/zh-hans/help/okx-racer-players-guide) 
 
-# 🔥🔥 Use PYTHON 3.10 🔥🔥
 
-> 🇷 🇺 README in russian available [here](README-RU.md)
 
-## Features  
-| Feature                                                   | Supported |
+## 功能  
+| 功能                                                   | 支持 |
 |-----------------------------------------------------------|:---------:|
-| Multithreading                                            |     ✅     |
-| Proxy binding to session                                  |     ✅     |
-| Support for tdata / pyrogram .session / telethon .session |     ✅     |
-| Auto-farming                                              |     ✅     |
-| Auto-tasks (except KYC)                                   |     ✅     |
-| Auto-boost                                                |     ✅     |
-| Auto-daily                                                |     ✅     |
+| 支持多用户                                            |     ✅     |
+| 支持代理                                  |     ✅     |
+| 支持 tdata / pyrogram .session / telethon .session |     ✅     |
+| 自动猜测价格                                              |     ✅     |
+| 自动车手任务 (KYC除外)                                   |     ✅     |
+| 自动伙伴任务                                                |     ✅     |
+| 自动第日任务                                               |     ✅     |
 
 
-## [Settings](https://github.com/Desamod/OkxRacerBot/blob/master/.env-example/)
-| Settings                |                                 Description                                 |
+## 设置
+| 设置                |                                 简介                                 |
 |-------------------------|:---------------------------------------------------------------------------:|
-| **API_ID / API_HASH**   | Platform data from which to run the Telegram session (by default - android) |
-| **SLEEP_TIME**          |             Sleep time between cycles (by default - [300, 500])             |
-| **AUTO_BOOST**          |                     Buying a boost (by default - True)                      |
-| **BOOSTERS**            |              Types of boost to buy (for all by default - True)              |
-| **AUTO_TASK**           |                Auto tasks (except KYC task) (default - True)                |
-| **USE_REF**             |                      Using a ref link (default - True)                      |
-| **RANDOM_PREDICTION**   |                Using random for prediction (default - True)                 |
-| **MAX_COMBO_COUNT**     |                       Max combo count (default - 28)                        |
-| **USE_PROXY_FROM_FILE** | Whether to use a proxy from the bot/config/proxies.txt file (True / False)  |
+| **API_ID / API_HASH**   | Telegram API 密钥 (默认 - android) |
+| **SLEEP_TIME**          |             运行间隔时间 (默认 - [300, 500])             |
+| **AUTO_BOOST**          |                     自动加满燃料箱 (默认 - True)                      |
+| **BOOSTERS**            |              自动升级燃料箱与涡轮增压器 (默认 - True)              |
+| **AUTO_TASK**           |                自动任务（KYC 任务除外） (默认 - True)                |
+| **USE_REF**             |                      使用 ref 链接（默认 - True)                      |
+| **RANDOM_PREDICTION**   |                随机猜测价格（默认值 - True)                 |
+| **MAX_COMBO_COUNT**     |                       最大组合数（默认 - 28)                        |
+| **USE_PROXY_FROM_FILE** | 是否开启代理 bot/config/proxies.txt  (True / False)  |
 
-## Quick Start 📚
 
-To fast install libraries and run bot - open run.bat on Windows or run.sh on Linux
 
-## Prerequisites
-Before you begin, make sure you have the following installed:
-- [Python](https://www.python.org/downloads/) **version 3.10**
-
-## Obtaining API Keys
-1. Go to my.telegram.org and log in using your phone number.
-2. Select "API development tools" and fill out the form to register a new application.
-3. Record the API_ID and API_HASH provided after registering your application in the .env file.
-
-## Installation
-You can download the [**repository**](https://github.com/Desamod/OkxRacerBot) by cloning it to your system and installing the necessary dependencies:
+## 1.安装
+- 1.安装 [Python](https://www.python.org/downloads/release/python-31014/) **version 3.10**
+- 2.克隆OkxRacerBot
 ```shell
-git https://github.com/Desamod/OkxRacerBot
+git clone https://github.com/Desamod/OkxRacerBot.git
 cd OkxRacerBot
 ```
 
-Then you can do automatic installation by typing:
+# 2.自动安装OkxRacerBot:
 
 Windows:
 ```shell
@@ -63,17 +51,31 @@ Linux:
 run.sh
 ```
 
-# Linux manual installation
+
+## 3.获取 telegram API 密钥
+1. 登录[telegram API](https://my.telegram.org)。 
+2. 选择 "API development tools" 填写表格注册新的Android应用程序。
+3. 将 API_ID 与 API_HASH 填写到 .env 文件。
+
+
+## 4.设置代理
+1.编辑 .env 文件开启代理 USE_PROXY_FROM_FILE=True
+2.编辑 bot/config/proxies.txt 文件添加代理服务器，例http://127.0.0.1:7890
+
+
+
+
+# Linux 手动安装
 ```shell
 python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
 cp .env-example .env
-nano .env  # Here you must specify your API_ID and API_HASH, the rest is taken by default
+nano .env  # 填写你的telegram API_ID和API_HASH，其余的采用默认
 python3 main.py
 ```
 
-You can also use arguments for quick start, for example:
+您还可以使用参数进行快速启动，例如：
 ```shell
 ~/OkxRacerBot >>> python3 main.py --action (1/2)
 # Or
@@ -83,17 +85,20 @@ You can also use arguments for quick start, for example:
 # 2 - Creates a session
 ```
 
-# Windows manual installation
+# Windows 手动安装
 ```shell
+git clone https://github.com/Desamod/OkxRacerBot.git
+cd OkxRacerBot
+
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 copy .env-example .env
-# Here you must specify your API_ID and API_HASH, the rest is taken by default
+# 填写你的telegram API_ID和API_HASH，其余的采用默认
 python main.py
 ```
 
-You can also use arguments for quick start, for example:
+您还可以使用参数进行快速启动，例如：
 ```shell
 ~/OkxRacerBot >>> python main.py --action (1/2)
 # Or
@@ -102,10 +107,4 @@ You can also use arguments for quick start, for example:
 # 1 - Run clicker
 # 2 - Creates a session
 ```
-
-### Contacts
-
-For support or questions, you can contact me
-
-[![Static Badge](https://img.shields.io/badge/Telegram-Channel-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/desforge_crypto)
 
