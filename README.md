@@ -1,7 +1,10 @@
+[![Static Badge](https://img.shields.io/badge/Telegram-Bot%20Link-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/OKX_official_bot/OKX_Racer?startapp=linkCode_116016253)
+
 # 🔥🔥 [OKX Racer游戏入口](https://t.me/OKX_official_bot/OKX_Racer?startapp=linkCode_110429030) 🔥🔥
 
 - [OKX Racer游戏说明](https://www.okx.com/zh-hans/help/okx-racer-players-guide) 
 
+![image](https://github.com/oe77/OkxRacerBot/blob/master/2024-08-15_202044.png)
 
 
 ## 功能  
@@ -53,7 +56,7 @@ run.sh
 
 
 ## 3.获取 telegram API 密钥
-1. 登录[telegram API](https://my.telegram.org)。 
+1. 登录[telegram API](https://my.telegram.org)。 PS:电话地址要跟IP对上,不然报错
 2. 选择 "API development tools" 填写表格注册新的Android应用程序。
 3. 将 API_ID 与 API_HASH 填写到 .env 文件。
 
@@ -63,6 +66,32 @@ run.sh
 2.编辑 bot/config/proxies.txt 文件添加代理服务器，例http://127.0.0.1:7890
 
 
+## 5.创建会话
+```shell
+Select an action:
+
+    1. Run clicker
+    2. Create session
+
+> 2
+
+Enter the session name (press Enter to exit): 随便填入会话名称
+Welcome to Pyrogram (version 2.0.106)
+Pyrogram is free software and comes with ABSOLUTELY NO WARRANTY. Licensed
+under the terms of the GNU Lesser General Public License v3.0 (LGPL-3.0).
+
+Enter phone number or bot token: 填入手机号获取验证码 +区号
+```
+
+## 6.运行
+
+Select an action:
+```shell
+    1. Run clicker
+    2. Create session
+
+> 1
+```
 
 
 # Linux 手动安装
@@ -107,4 +136,5 @@ python main.py
 # 1 - Run clicker
 # 2 - Creates a session
 ```
+[![Static Badge](https://img.shields.io/badge/Telegram-Channel-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/desforge_crypto)
 
